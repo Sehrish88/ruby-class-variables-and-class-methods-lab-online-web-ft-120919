@@ -10,6 +10,10 @@ class Song
     @@genres.uniq
   end
   
+  def self.genre_count
+    @@genres.inject(Hash.new(0)) { |total, i| total[i] += 1 ;total}
+  end 
+  
   attr_accessor :name, :artist, :genre 
   def initialize(name, artist, genre)
     @name = name
