@@ -44,4 +44,5 @@ class Song
   
   end 
   
+  the_day = Song.new("The Day", "John Smith", "classic")
   
