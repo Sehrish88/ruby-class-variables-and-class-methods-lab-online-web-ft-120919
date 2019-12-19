@@ -44,5 +44,12 @@ class Song
   
   end 
   
-  the_day = Song.new("The Day", "John Smith", "classic")
-  
+the_day = Song.new("The Day", "John Smith", "classic")
+puts the_day.name
+puts the_day.artist
+puts the_day.genre
+puts Song.count
+Song.genres
+Song.artists
+Song.genre_count
+Song.artist_count
